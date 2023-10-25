@@ -1,10 +1,12 @@
 import { Route } from '@angular/router';
-import {ArchitectComponent} from "./architect/architect.component";
 import {NxWelcomeComponent} from "./nx-welcome.component";
+import {AddCustomerComponent} from "./customer/add-customer/add-customer.component";
+import {ListCustomerComponent} from "./customer/list-customer/list-customer.component";
 
 export const appRoutes: Route[] = [
 
   { path: '', component: NxWelcomeComponent, pathMatch: 'full' },
-  { path: 'architect', component: ArchitectComponent },
+  { path: 'customer/add', component: AddCustomerComponent },
+  { path: 'customers', component: ListCustomerComponent },
 
 ];
